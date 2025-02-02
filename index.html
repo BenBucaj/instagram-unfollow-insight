@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Unfollow Insight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span class="instagram-logo">Instagram</span> 
+            <span class="insight-text">UNFOLLOW INSIGHT</span>
+        </h1>
+        <p>Finding out who doesn’t follow you back. Reciprocity is important.</p>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload Your Files</h2>
+        <p class="upload-instructions">Instructions below on how to obtain the necessary files.</p>
+        <label for="followersFile">Upload Followers HTML:</label>
+        <input type="file" id="followersFile" accept=".html">
+        <br><br>
+        <label for="followingFile">Upload Following HTML:</label>
+        <input type="file" id="followingFile" accept=".html">
+        <br><br>
+        <button id="compareBtn">Compare</button>
+    </section>
+
+    <section id="results" style="display:none;">
+        <h2 id="resultsHeader">People Do Not Follow You Back</h2>
+        <ul id="notFollowingBackList"></ul>
+    </section>
+
+    <section class="instructions">
+        <h2>How to Retrieve Your Instagram Data</h2>
+        <ol>
+            <li>Navigate to your Instagram <b>Settings and Activity</b> section.</li>
+            <li>Access the <b>Accounts Center</b>.</li>
+            <li>Under <b>"Account Settings"</b>, select <b>"Your Information and Permissions"</b>.</li>
+            <li>Click on <b>"Download Your Information"</b>.</li>
+            <li>Select <b>"Download or Transfer Information"</b>.</li>
+            <li>Click on your Instagram account under <b>"Your Accounts and Profiles"</b>.</li>
+            <li>When prompted with <b>"How much information do you want?"</b>, select <b>"Some of your information"</b>.</li>
+            <li>Navigate to the <b>"Connections"</b> section and select <b>"Followers and Following"</b>.</li>
+            <li>Click <b>"Download to Device"</b>.</li>
+            <li>Under <b>"Create Files to Download"</b>, adjust the <b>date range</b> to <b>"All Time"</b>.</li>
+            <li>Click <b>"Create Files"</b>.</li>
+            <li>Allow <b>5-15 minutes</b> for the requested files to become available for download in the same section.</li>
+        </ol>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

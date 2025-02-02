@@ -1,0 +1,164 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;600&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #fafafa, #eaeaea); /* Subtle Instagram-style gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Instagram-Styled Logo */
+.instagram-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    color: #c13584; /* Instagram's signature pink */
+}
+
+/* Keep "Unfollow Insight" in modern styling */
+.insight-text {
+    font-family: 'Raleway', sans-serif; /* Softer font */
+    font-size: 35px; /* Slightly smaller */
+    font-weight: 500; /* Less bold */
+    color: #292828; /* Softer gray tone */
+    letter-spacing: 1px; /* Adds some spacing for elegance */
+}
+
+/* Refined Subtitle Styling */
+header p {
+    font-size: 16px; /* Made smaller */
+    font-weight: 400; /* Lightened to reduce heaviness */
+    color: #555; /* Slightly softer text */
+    margin-top: 5px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    width: 50%;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Upload instructions text (below "Upload Your Files") */
+.upload-instructions {
+    font-size: 14px;
+    color: #9c9898; /* Lighter gray for subtlety */
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    border: 2px dashed #ccc;
+    border-radius: 12px; /* Softer corners */
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Adds slight depth */
+}
+
+input[type="file"]:hover {
+    border-color: #3897f0;
+}
+
+/* Instagram-Style Gradient Button */
+button {
+    margin-top: 20px;
+    padding: 14px 24px;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(to right, #ff758c, #ff7eb3); /* Instagram-like gradient */
+    color: white;
+    cursor: pointer;
+    border-radius: 12px; /* More rounded */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    transform: scale(1.05);
+}
+
+/* Results Section */
+#results {
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    width: 50%;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* List Styling */
+#notFollowingBackList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notFollowingBackList li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#notFollowingBackList li:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Instructions Section */
+.instructions {
+    text-align: left;
+    background: white;
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header of the instructions section */
+.instructions h2 {
+    color: #333; /* Keep it bold and dark */
+    font-weight: bold;
+}
+
+/* Make step text slightly lighter */
+.instructions ol {
+    color: #4a4949; /* Slightly lighter gray for a distinct contrast */
+    font-size: 15px;
+}
+
+.instructions li {
+    margin-bottom: 8px; /* Add slight spacing between steps */
+}
+
+input[type="file"]:hover {
+    border-color: #c13584; /* Instagram Pink */
+    background: #f9f9f9;
+}
