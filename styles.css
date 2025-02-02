@@ -129,10 +129,27 @@ button:hover {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Hover Effect for List Items */
 #notFollowingBackList li:hover {
     background: #e0e0e0;
     transform: translateY(-2px);
 }
+
+/* Link Styling for Usernames */
+#notFollowingBackList a {
+    text-decoration: none !important; /* Force remove underline */
+    color: black !important; /* Force text color to black */
+    font-weight: 500;
+    display: block; /* Ensure the entire li is clickable */
+}
+
+/* Optional: Change color on hover */
+#notFollowingBackList a:hover {
+    color: gray !important; /* Optional: Slight hover effect */
+}
+
+
+
 
 /* Instructions Section */
 .instructions {
@@ -164,4 +181,10 @@ button:hover {
 input[type="file"]:hover {
     border-color: #c13584; /* Instagram Pink */
     background: #f9f9f9;
+}
+
+.info-text {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
 }

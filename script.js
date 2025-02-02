@@ -104,8 +104,16 @@ function displayResults(notFollowingBack) {
         // Otherwise, create a list of users who don't follow back
         notFollowingBack.forEach(username => {
             const li = document.createElement("li"); // Create a list item
-            li.textContent = username; // Set the text to the username
-            list.appendChild(li); // Add it to the list
+            const link = document.createElement("a"); // Create an anchor tag
+
+            link.href = `https://www.instagram.com/${username}/`; // Set the Instagram profile URL
+            link.target = "_blank"; // Open in a new tab
+            link.textContent = username; // Set the text to the username
+            link.style.textDecoration = "none"; // Optional: remove underline
+            link.style.color = "#007bff"; // Optional: make it look clickable (Instagram blue)
+
+            li.appendChild(link); // Add the link inside the list item
+            list.appendChild(li); // Add the list item to the list
         });
     }
 
