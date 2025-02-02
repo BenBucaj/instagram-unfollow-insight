@@ -18,21 +18,24 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Instagram-Styled Logo */
-.instagram-logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 42px;
-    color: #c13584; /* Instagram's signature pink */
+
+.unfollow-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 46px;
+    font-weight: 700;
+    color: #c13584;
 }
 
-/* Keep "Unfollow Insight" in modern styling */
+
 .insight-text {
-    font-family: 'Raleway', sans-serif; /* Softer font */
-    font-size: 35px; /* Slightly smaller */
-    font-weight: 500; /* Less bold */
-    color: #292828; /* Softer gray tone */
-    letter-spacing: 1px; /* Adds some spacing for elegance */
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #292828;
+    letter-spacing: 1px;
 }
+
+
 
 /* Refined Subtitle Styling */
 header p {
