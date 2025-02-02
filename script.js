@@ -1,30 +1,44 @@
-// Add an event listener to the "Compare" button
-document.getElementById("compareBtn").addEventListener("click", function () {
-    // Get the selected files from the file inputs
-    const followersFile = document.getElementById("followersFile").files[0];
-    const followingFile = document.getElementById("followingFile").files[0];
+// Ensure the script runs after the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    
+    // Add event listeners to detect when files are selected
+    document.getElementById("followersFile").addEventListener("change", function () {
+        console.log("Followers File Selected: ", this.files.length > 0 ? this.files[0].name : "No file selected");
+    });
 
-    // Check if both files are uploaded
-    if (!followersFile || !followingFile) {
-        alert("Please upload both files."); // Show an alert if files are missing
-        return; // Stop execution
-    }
+    document.getElementById("followingFile").addEventListener("change", function () {
+        console.log("Following File Selected: ", this.files.length > 0 ? this.files[0].name : "No file selected");
+    });
 
-    // Read the followers file first
-    readFile(followersFile, function (followersHTML) {
-        // Then read the following file
-        readFile(followingFile, function (followingHTML) {
-            // Extract usernames from both HTML files
-            const followers = extractUsernames(followersHTML);
-            const following = extractUsernames(followingHTML);
+    // Add an event listener to the "Compare" button
+    document.getElementById("compareBtn").addEventListener("click", function () {
+        // Get the selected files from the file inputs
+        const followersFile = document.getElementById("followersFile").files[0];
+        const followingFile = document.getElementById("followingFile").files[0];
 
-            // Identify users who do not follow back
-            const notFollowingBack = following.filter(user => !followers.includes(user));
+        // Check if both files are uploaded
+        if (!followersFile || !followingFile) {
+            alert("Please upload both files."); // Show an alert if files are missing
+            return; // Stop execution
+        }
 
-            // Display the results on the page
-            displayResults(notFollowingBack);
+        // Read the followers file first
+        readFile(followersFile, function (followersHTML) {
+            // Then read the following file
+            readFile(followingFile, function (followingHTML) {
+                // Extract usernames from both HTML files
+                const followers = extractUsernames(followersHTML);
+                const following = extractUsernames(followingHTML);
+
+                // Identify users who do not follow back
+                const notFollowingBack = following.filter(user => !followers.includes(user));
+
+                // Display the results on the page
+                displayResults(notFollowingBack);
+            });
         });
     });
+
 });
 
 /**
