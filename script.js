@@ -108,9 +108,9 @@ function displayResults(notFollowingBack) {
 
             link.href = `https://www.instagram.com/${username}/`; // Set the Instagram profile URL
             link.target = "_blank"; // Open in a new tab
-            link.textContent = username; // Set the text to the username
-            link.style.textDecoration = "none"; // Optional: remove underline
-            link.style.color = "#007bff"; // Optional: make it look clickable (Instagram blue)
+            link.textContent = username; // set the text to the username
+            link.style.textDecoration = "none"; // removes underline
+            link.style.color = "#007bff"; //  makes it look clickable (Instagram blue)
 
             li.appendChild(link); // Add the link inside the list item
             list.appendChild(li); // Add the list item to the list
